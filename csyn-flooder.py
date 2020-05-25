@@ -20,7 +20,7 @@ print("""
 \td.Random Window Size
 \te.Multi Threading
 If you want to exit press  Ctrl+C
-If you want to see verbose, change the verbose value with True
+If you don't want to see verbose, change the verbose value with False
 """)
 
 if len(sys.argv) != 4:
