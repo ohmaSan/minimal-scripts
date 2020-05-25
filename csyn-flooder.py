@@ -24,7 +24,7 @@ If you want to see verbose, change the verbose value with True
 """)
 
 if len(sys.argv) != 4:
-    print("usage: ./csyn_flooder.py <TargetIP> <TargetPort> <Thread>\n")
+    print("usage: python3 csyn_flooder.py <TargetIP> <TargetPort> <Thread>\n")
     sys.exit()
 
 targe = str(sys.argv[1])
