@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 target = input("Target: ")
-print("#" * 50)
+print("#" * 50 + "\n")
 
 
 def crawler():
