@@ -1,2 +1,1 @@
-# Penetration-Scripts
-Minimal And Effective Scripts
+# Minimal And Effective Scripts
