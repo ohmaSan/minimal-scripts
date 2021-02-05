@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # Tokuchi Toua
 # cportchecker.py (Python3 Spesific Port Checker)
+# One packet sender spesific port!
 
 from scapy.layers.inet import TCP, IP
 from scapy.all import *
