@@ -10,6 +10,7 @@ headers_param = {
 # welcome and input
 print("\nSample URL: http://target.com/a/b/{}")
 target = input("Target: ")
+print("\n")
 
 if "{}" not in target:
     print("Sample URL: http://target.com/a/b/{} \n"
