@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+#User leecher program for bruteforce, data science, etc.
+
 print(" \n ==>MadaraUserLeecher v1.4<==")
 
 # headers
