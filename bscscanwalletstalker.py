@@ -1,7 +1,7 @@
 import requests
 import time
 
-print("bscscanWalletStalker v1.2")
+print("bscscanWalletStalker v1.1")
 
 bscscan = "https://api.bscscan.com"
 token = "0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830"
@@ -20,7 +20,7 @@ while True:
             with open("stalking.txt", "a") as f:
                 f.write("\n" + time.strftime('%X %x ==> ') + wallets.strip() + " = " + r.text.strip())
             key += 1
-            if key == 5:
+            if key == 3:
                 with open("stalking.txt", "a") as f:
                     f.write("\n")
                 time.sleep(1)
