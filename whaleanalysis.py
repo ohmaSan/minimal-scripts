@@ -58,6 +58,6 @@ if firstBalance > lastBalance:
 else:
     print(f"{timem} ==> Whale buy count: {buy}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While buy cout: {buy} \n")
+        f.write(f"While buy count: {buy} \n")
 
 """
