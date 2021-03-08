@@ -19,9 +19,9 @@ sell = int(firstBalance) - int(lastBalance)
 buy = int(lastBalance) - int(lastBalance)
 
 if firstBalance > lastBalance:
-    print(f"Whale buy count: {buy}")
+    print(f"Whale buy count: {sell}")
 else:
-    print(f"Whale sell count: {sell}" )
+    print(f"Whale sell count: {buy}" )
 
 
 """
@@ -45,21 +45,20 @@ with open("stalking.txt") as f:
         lbalance = last_line[106:131]
         lastBalance = "".join(lbalance[0:7])
 
+timem = time.strftime('%X %x')
+
+
 sell = int(firstBalance) - int(lastBalance)
 buy = int(lastBalance) - int(lastBalance)
 
-
-timem = time.strftime('%X %x')
 if firstBalance > lastBalance:
-    print(f"While buy count: {sell}")
+    print(f"While sell count: {sell}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While buy coint: {sell}" + f"First time:  {timem}")
+        f.write(f"{timem} ==> While buy count: {sell}")
 else:
-    print(f"While sell count: {buy}" + f"First time:  {timem}")
+    print(f"{timem} ==> While buy count: {buy}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While sell cout: {buy}")
-
-
+        f.write(f"While buy cout: {buy}")
 
 
 
