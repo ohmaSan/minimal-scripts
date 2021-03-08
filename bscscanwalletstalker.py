@@ -1,7 +1,7 @@
 import requests
 import time
 
-print("bscscanWalletStalker v1.1")
+print("bscscanWalletStalker v1.2")
 
 bscscan = "https://api.bscscan.com"
 token = "0xf859Bf77cBe8699013d6Dbc7C2b926Aaf307F830"
