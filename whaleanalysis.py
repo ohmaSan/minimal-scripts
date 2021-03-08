@@ -52,13 +52,13 @@ sell = int(firstBalance) - int(lastBalance)
 buy = int(lastBalance) - int(lastBalance)
 
 if firstBalance > lastBalance:
-    print(f"While sell count: {sell}")
+    print(f"Whale sell count: {sell}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
         f.write(f"{timem} ==> While buy count: {sell}")
 else:
     print(f"{timem} ==> While buy count: {buy}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While buy cout: {buy}")
+        f.write(f"Whale buy cout: {buy}")
 
 
 
