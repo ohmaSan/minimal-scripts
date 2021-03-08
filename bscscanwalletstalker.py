@@ -12,15 +12,16 @@ print("First time:" + time.strftime('%X %x'))
 
 while True:
     with open("whales.txt") as f:
-        print("Program is running! stalking.txt is creating..!\n")
-
+        print("\nProgram is running! stalking.txt is creating..!")
         for wallets in f:
             r = requests.get(
                 f'{bscscan}/api?module=account&action=tokenbalance&contractaddress={token}&address={wallets.strip()}&tag=latest&apikey={api_key}')
             print(time.strftime('%X %x ==> ') + wallets.strip() + " = " + r.text.strip())
             with open("stalking.txt", "a") as f:
-                f.write(time.strftime('%X %x ==> ') + wallets.strip() + " = " + r.text.strip() + "\n")
+                f.write("\n" + time.strftime('%X %x ==> ') + wallets.strip() + " = " + r.text.strip())
             key += 1
             if key == 5:
+                with open("stalking.txt", "a") as f:
+                    f.write("\n")
                 time.sleep(1)
                 key = 0
