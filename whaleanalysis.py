@@ -25,6 +25,7 @@ else:
 
 
 """
+
 import time
 #whale analyzer
 
@@ -49,14 +50,12 @@ buy = int(lastBalance) - int(lastBalance)
 
 if firstBalance > lastBalance:
     print(f"While buy count: {sell}")
-    with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While buy coint: {sell}")
+    with open("/home/n0x/Desktop/berry/hunt/signalling.txt","a") as f:
+        f.write(f"While buy coint: {sell}" + "First time:  {time.strftime('%X %x')}")
 else:
-    print(f"While sell count: {buy}" )
-    with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
+    print(f"While sell count: {buy}" + "First time:  {time.strftime('%X %x')}")
+    with open("/home/n0x/Desktop/berry/hunt/signalling.txt","a") as f:
         f.write(f"While sell cout: {buy}")
-
-
 
 
 """
