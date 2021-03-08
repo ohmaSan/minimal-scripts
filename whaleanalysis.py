@@ -48,14 +48,20 @@ with open("stalking.txt") as f:
 sell = int(firstBalance) - int(lastBalance)
 buy = int(lastBalance) - int(lastBalance)
 
+
+timem = time.strftime('%X %x')
 if firstBalance > lastBalance:
     print(f"While buy count: {sell}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
-        f.write(f"While buy coint: {sell}" + "First time:  {time.strftime('%X %x')}")
+        f.write(f"While buy coint: {sell}" + f"First time:  {timem}")
 else:
-    print(f"While sell count: {buy}" + "First time:  {time.strftime('%X %x')}")
+    print(f"While sell count: {buy}" + f"First time:  {timem}")
     with open("/home/x/Desktop/berry/hunt/signalling.txt","a") as f:
         f.write(f"While sell cout: {buy}")
+
+
+
+
 
 
 """
