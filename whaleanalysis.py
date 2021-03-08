@@ -19,8 +19,8 @@ sell = int(firstBalance) - int(lastBalance)
 buy = int(lastBalance) - int(lastBalance)
 
 if firstBalance > lastBalance:
-    print(f"While buy count: {sell}")
+    print(f"Whale buy count: {sell}")
 else:
-    print(f"While sell count: {buy}" )
+    print(f"Whale sell count: {buy}" )
 
 
