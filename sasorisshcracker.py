@@ -1,4 +1,5 @@
 #SSH Multi Thread BruteForce/DictionaryAttack Tool
+#Sample: python3 sshsasori.py targets.txt 22 usernames.txt passwords.txt
 
 import sys
 import paramiko
