@@ -1,1 +1,1 @@
-# Minimal And Effective Scripts
+# Minimal And Effective Python Scripts
